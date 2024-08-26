@@ -1,3 +1,4 @@
+import { Montserrat } from 'next/font/google'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -8,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        montserrat: 'var(--font-montserrat)'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
